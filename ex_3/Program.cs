@@ -56,16 +56,15 @@ PrintArray(array);
 //}
 //Max(array);
  
-int Diminution(int[] collection)  // разница max и min
+int Diminution(int[] col)  // разница max и min
 {
-int count = array.Length;
-int i = 0;
+int count = col.Length;
 int max = 0;
 int min = 0;
 int DimMaxMin = 0;
-while(i < count)
+for (int i = 0; i < col.Length; i++)
 {
-if(array[i] > max)
+  if(array[i] > max)
 {
 max = array[i];
 array[i] = max;
@@ -75,11 +74,10 @@ if(array[i] < min)
 {
 min = array[i];
 array[i] = min;
-Console.WriteLine($"Максимально число в массиве = {min}");
-{
-i++;
+Console.WriteLine($"Минимальное число в массиве = {min}");  
 }
-}
+DimMaxMin = max-min;
+Console.WriteLine($"Разница между max и min = {DimMaxMin}"); 
 }
 return DimMaxMin;
 }
