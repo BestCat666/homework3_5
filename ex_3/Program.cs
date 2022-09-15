@@ -30,13 +30,7 @@ int [] array = new int [elementsCount]; // new int[число]; создать �
 FillArray(array);
 PrintArray(array);
 
-//int Min (int[] array) //нахождение мин значения
-//{
-//int count = array.Length;
-//int i= 0;
-//Min(array);
-
-//int Max (int[] array) //нахождение макс значения
+//int Max (int[] array) //нахождение max значения, аналогично min
 //{
 //int count = array.Length;
 //int i= 0;
@@ -67,18 +61,14 @@ for (int i = 0; i < col.Length; i++)
   if(array[i] > max)
 {
 max = array[i];
-array[i] = max;
-Console.WriteLine($"Максимально число в массиве = {max}");
 }
 if(array[i] < min)
 {
 min = array[i];
-array[i] = min;
-Console.WriteLine($"Минимальное число в массиве = {min}");  
 }
 DimMaxMin = max-min;
-Console.WriteLine($"Разница между max и min = {DimMaxMin}"); 
 }
 return DimMaxMin;
 }
-Diminution(array);
+int DimMaxMin = Diminution(array);
+Console.WriteLine($"Разница между max и min = {DimMaxMin}"); 
