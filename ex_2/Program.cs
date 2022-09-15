@@ -64,6 +64,6 @@ index++;
 }
 return SumNum_Odd_Position;
 }
-SumNum_Odd_Position = Sum(array);
+int SumNum_Odd_Position = Sum(array);
 Console.WriteLine($"Сумма чисел, стоящих на нечётной позиции в массиве = {SumNum_Odd_Position}");
 
