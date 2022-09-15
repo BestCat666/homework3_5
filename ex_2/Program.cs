@@ -57,7 +57,6 @@ while(index < count)
 if(index % 2 > 0)
 {
 SumNum_Odd_Position = SumNum_Odd_Position + array[index];
-Console.WriteLine($"Сумма чисел, стоящих на нечётной позиции в массиве = {SumNum_Odd_Position}");
 }
 {
 index++;
@@ -65,6 +64,6 @@ index++;
 }
 return SumNum_Odd_Position;
 }
-Sum(array);
-
+SumNum_Odd_Position = Sum(array);
+Console.WriteLine($"Сумма чисел, стоящих на нечётной позиции в массиве = {SumNum_Odd_Position}");
 
